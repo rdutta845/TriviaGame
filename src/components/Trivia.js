@@ -19,7 +19,7 @@ export default class Trivia extends Component{
     }
     render(){
         return(<div>
-            {this.state.isLoading? "Loading..." : <TriviaGame quesns={this.state.results}/>}
+            {this.state.isLoading? "Loading..." : <TriviaGame quesns={this.state.results} addData={this.props.addData}/>}
             </div>)
     }
 }

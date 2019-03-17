@@ -17,8 +17,8 @@ module.exports = {
             use:['style-loader', 'css-loader']
         },
         {
-            test:/\.scc$/,
-            use: ['style-loader', 'css-loader', 'scss-loader']
+            test:/\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
         }
         ]
     },

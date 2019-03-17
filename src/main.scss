@@ -1,0 +1,25 @@
+.que-block{
+    display: table;
+    margin: auto;
+    background: #2dd8ff;
+    padding: 25px;
+    margin-bottom: 20px;
+    & .ques{
+        width: 457px;
+        word-break: break-word;
+    }
+
+}
+.submit-btn{
+    outline: none;
+    border: none;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: #fffefe;
+    cursor: pointer;
+    &:active{
+        box-shadow: 1px 1px 0px 0px;
+    }
+}
