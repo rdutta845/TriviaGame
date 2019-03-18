@@ -3,11 +3,16 @@ const initialState = {
 };
 
 const reducer = (state=initialState, action) => {
-  const newState = {...state};
+  const newState = {...state}; // New Object
 
   switch(action.type){
       case 'ADD': 
-          newState.age += action.value;
+          newState.point = action.value;
+          console.log("inside add", newState);
+          break;
+      case 'reset': 
+          newState.point = 0;
+          console.log("inside RESET", newState);
           break;
       default:
           break;
